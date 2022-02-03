@@ -14,7 +14,7 @@
 }
 
 .cardImage {
-  height: 150px;
+  height: 60%;
   width: auto;
 }
 
@@ -22,9 +22,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  column-gap: 7%;
   width: 100%;
-  margin-top: 5%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
 }
 
 .cardName {

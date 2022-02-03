@@ -1,8 +1,33 @@
 /* Menu burger */
+.Nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: var(--secondColor);
+}
+
+.NavLogo {
+  width: 233px;
+  height: 23px;
+}
+
+.NavCredits {
+  position: absolute;
+  left: 20px;
+}
+
+.NavCredits h3 {
+  color: var(--thirdColor);
+  font-weight: bold;
+}
+
 #menu-burger {
   position: absolute;
-  top: 2.5em;
-  right: 3.5em;
+  top: 10px;
+  right: 20px;
   display: inline-block;
   cursor: pointer;
 }
@@ -11,7 +36,7 @@
 #menu-burger .bar3 {
   width: 32px;
   height: 5px;
-  background-color: black;
+  background-color: var(--thirdColor);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -35,9 +60,9 @@
 #navbar {
   position: fixed;
   z-index: 9999;
-  left: -25%;
+  left: -30%;
   top: auto;
-  background: #e74c3c;
+  background: var(--secondColor);
   padding: 4em 2em;
   width: 25%;
   min-height: 100%;

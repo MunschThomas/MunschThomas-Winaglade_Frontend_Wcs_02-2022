@@ -5,33 +5,88 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--firstColor);
 }
 
 .homeIntro {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: space-around;
   justify-content: flex-start;
   width: 100%;
   height: 100%;
 }
 
+.homeIntroText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+}
+
 .homeIntro img {
-  width: 60%;
-  height: auto;
+  width: 62%;
+  height: 90vh;
 }
 
 .homeIntro h1 {
-  font-size: 4em;
-  margin: 40px 0 0 40px;
-  text-align: left;
+  font-size: 3em;
+  width: 350px;
+  margin-top: 50px;
+}
+
+.homeIntro h2 {
+  width: 350px;
+  margin-top: 100px;
+}
+
+.paris {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  width: 100%;
+  margin-top: 80px;
+  padding: 40px 0;
+  background: var(--fourColor);
+}
+
+.paris h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.parisImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.parisImg img {
+  width: 250px;
+  height: auto;
+  border: 2px brown solid;
+  border-radius: 20px;
 }
 
 .homeBestPlayersCards {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.homeBestPlayers {
+  padding: 40px 0;
+  width: 100%;
+}
+
+.homeBestPlayers h2 {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .homePlayers {
@@ -42,4 +97,9 @@
 .homePlayersRandom img {
   width: 200px;
   height: 100px;
+}
+
+.homeContact {
+  background: var(--fourColor);
+  width: 100%;
 }

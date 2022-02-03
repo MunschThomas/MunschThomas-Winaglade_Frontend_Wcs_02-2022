@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import Logo from "../assets/logoW.png";
 import "./styles/Navbar.css";
 
 const Navbar = () => {
@@ -20,7 +21,11 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="Nav">
+      <div className="NavCredits">
+        <h3>🪙 1523.21 Sesterces</h3>
+      </div>
+      <img className="NavLogo" src={Logo} alt="logo"></img>
       <div id="navbar" className="">
         <ul>
           <li className="nav">
@@ -41,9 +46,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div id="menu-burger" className={isOpen && "clicked"} onClick={openMenu}>
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
       </div>
     </div>
   );

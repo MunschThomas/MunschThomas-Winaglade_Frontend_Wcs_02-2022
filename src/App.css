@@ -1,14 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 
-.App {
-  text-align: center;
+:root {
+  --firstColor: #c5c1c1;
+  --secondColor: #962828;
+  --thirdColor: #ffffff;
+  --fourColor: #707070;
+  --gradientColor: #010101;
+  --fontTitle: "Philosopher", sans-serif;
+  --fontBody: "Philosopher", sans-serif;
 }
 
-h1,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--fontTitle);
+  font-weight: 700;
+  color: var(--gradientColor);
+}
 h2,
 h3 {
-  font-family: "Philosopher", sans-serif;
+  font-family: var(--fontBody);
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 p {
