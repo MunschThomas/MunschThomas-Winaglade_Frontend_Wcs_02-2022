@@ -6,12 +6,22 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openMenu = () => {
+    const navbar = document.getElementById("navbar");
     setIsOpen(!isOpen);
+    if (navbar.classList.contains("visible")) {
+      navbar.classList.remove("visible");
+      navbar.classList.add("invisible");
+    } else if (navbar.classList.contains("invisible")) {
+      navbar.classList.remove("invisible");
+      navbar.classList.add("visible");
+    } else {
+      navbar.classList.add("visible");
+    }
   };
 
   return (
     <div>
-      <div id="navbar" className={isOpen ? "visible" : "invisible"}>
+      <div id="navbar" className="">
         <ul>
           <li className="nav">
             <a href="#" className="navLink">
