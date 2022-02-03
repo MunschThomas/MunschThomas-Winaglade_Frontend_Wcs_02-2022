@@ -1,0 +1,56 @@
+.cardStatsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+  border: 2px solid black;
+}
+
+.cardTop {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardImage {
+  height: 150px;
+  width: auto;
+}
+
+.cardStats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 7%;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.cardName {
+  grid-column: 1 / 3;
+}
+
+.att {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.vit {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.def {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.acc {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.cardStatsLogos {
+  grid-column: 1/3;
+}
