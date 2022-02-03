@@ -17,7 +17,7 @@ const Main = () => {
           </h1>
           <h2>
             WinaGlade,
-            <br /> le premier site de parie Romain
+            <br /> le premier site de paris sportif Romain
           </h2>
         </div>
       </div>
