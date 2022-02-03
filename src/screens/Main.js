@@ -9,8 +9,16 @@ const Main = () => {
       <div className="homeIntro">
         <img src={Background} alt="gladiator"></img>
         <div className="homeIntroText">
-          <h1>AVE Casear, morituri te salutant</h1>
-          <h2>WinaGlade, le premier site de parie Romain</h2>
+          <h1>
+            AVE Casear,
+            <br />
+            morituri
+            <br /> te salutant
+          </h1>
+          <h2>
+            WinaGlade,
+            <br /> le premier site de parie Romain
+          </h2>
         </div>
       </div>
       <div className="paris">
