@@ -113,9 +113,64 @@
 .horseDad {
   position: absolute;
   width: 100vw;
-  bottom: -10px;
+  bottom: -12px;
   left: -700px;
   animation: 10s linear infinite run;
+}
+
+.horseMan {
+  position: absolute;
+  height: 50px;
+  width: 100vw;
+  bottom: 7px;
+  left: -700px;
+  animation: 10s linear infinite run;
+  animation-delay: 190ms;
+}
+
+.horseMan img,
+.horseMan2 img {
+  animation: 1s linear infinite Gallop;
+  width: 45px;
+}
+
+.horseMan3 img {
+  width: 120px;
+}
+
+.horseMan4 img {
+  width: 80px;
+  animation: 1s linear infinite Gallop;
+}
+
+.horseMan2 {
+  position: absolute;
+  height: 50px;
+  width: 100vw;
+  bottom: 7px;
+  left: -700px;
+  animation: 7s linear infinite run;
+  animation-delay: 120ms;
+}
+
+.horseMan3 {
+  position: absolute;
+  height: 50px;
+  width: 100vw;
+  bottom: -21px;
+  left: -700px;
+  animation: 10s linear infinite run;
+  animation-delay: 1400ms;
+}
+
+.horseMan4 {
+  position: absolute;
+  height: 50px;
+  width: 100vw;
+  bottom: 5px;
+  left: -700px;
+  animation: 10s linear infinite run;
+  animation-delay: 2878ms;
 }
 
 .horseDad2 {
@@ -124,6 +179,7 @@
   bottom: -10px;
   left: -700px;
   animation: 10s linear infinite run;
+  animation-delay: 1s;
 }
 
 .horseDad3 {
@@ -137,8 +193,9 @@
   position: absolute;
   width: 100vw;
   bottom: -10px;
-  left: -700px;
+  left: -900px;
   animation: 10s linear infinite run;
+  animation-delay: 3s;
 }
 .horseDad5 {
   position: absolute;

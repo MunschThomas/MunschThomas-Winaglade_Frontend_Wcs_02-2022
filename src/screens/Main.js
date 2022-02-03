@@ -1,6 +1,8 @@
 import "./styles/Main.css";
 import Background from "../assets/background.png";
 import HorseMan from "../assets/horseman.png";
+import HorseMan2 from "../assets/horseman2.png";
+import HorseMan3 from "../assets/horseman3.png";
 
 import CardsBestPlayers from "../components/CardsBestPlayers";
 import Contact from "../components/Contact";
@@ -24,8 +26,24 @@ const Main = () => {
         </div>
       </div>
       <div className="paris">
+        <div className="horseMan">
+          {" "}
+          <img src={HorseMan} alt=""></img>
+        </div>
         <div className="horseDad">
           <div className="horse">🐎</div>
+        </div>
+        <div className="horseMan2">
+          {" "}
+          <img src={HorseMan} alt=""></img>
+        </div>
+        <div className="horseMan3">
+          {" "}
+          <img src={HorseMan2} alt=""></img>
+        </div>
+        <div className="horseMan4">
+          {" "}
+          <img src={HorseMan3} alt=""></img>
         </div>
         <div className="horseDad2">
           <div className="horse">🐎</div>
