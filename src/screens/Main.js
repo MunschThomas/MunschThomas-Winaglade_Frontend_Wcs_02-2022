@@ -1,5 +1,7 @@
 import "./styles/Main.css";
 
+import CardsBestPlayers from "../components/CardsBestPlayers";
+
 const Main = () => {
   return (
     <div className="home">
@@ -13,10 +15,25 @@ const Main = () => {
       <div className="homeBestPlayers">
         <h2>🏆 Gladiateur du mois🏆</h2>
         <div className="homeBestPlayersCards">
-          <div className="homeBestPlayers1"></div>
-          <div className="homeBestPlayers2"></div>
-          <div className="homeBestPlayers3"></div>
+          <div className="homeBestPlayersCards2">
+            <CardsBestPlayers name="JeanFulusse" />
+          </div>
+          <div className="homeBestPlayersCards1">
+            <CardsBestPlayers name="Rackatus" />
+          </div>
+          <div className="homeBestPlayersCards3">
+            <CardsBestPlayers name="Hectorus" />
+          </div>
         </div>
+      </div>
+      <h2>Gladiateur aléatoire</h2>
+      <div className="homePlayers">
+        <CardsBestPlayers name="JeanFulusse" />
+        <CardsBestPlayers name="JeanFulusse" />
+        <CardsBestPlayers name="JeanFulusse" />
+        <CardsBestPlayers name="JeanFulusse" />
+        <CardsBestPlayers name="JeanFulusse" />
+        <CardsBestPlayers name="JeanFulusse" />
       </div>
     </div>
   );

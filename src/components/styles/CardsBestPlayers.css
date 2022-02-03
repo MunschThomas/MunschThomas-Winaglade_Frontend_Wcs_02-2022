@@ -1,0 +1,11 @@
+.cardsBestPlayers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.cardsBestPlayersImg {
+  width: 150px;
+}
