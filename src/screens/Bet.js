@@ -1,40 +1,72 @@
 import CardsBestPlayers from '../components/CardsBestPlayers'
-import { useState } from 'React'
+import { useState } from 'react'
 import './styles/Bet.css'
 import 'animate.css'
 
 const Bet = () => {
   const [isAnimate, setisAnimate] = useState(false)
+  const [isAnimate2, setisAnimate2] = useState(false)
+  const [isAnimate3, setisAnimate3] = useState(false)
 
-  const animate = () => {}
   return (
     <div>
       <h1>Les paris</h1>
-      <div className='opponents'>
-        <div className='div1'>
-          <div className='div2'>
-            <CardsBestPlayers name='JeanFulusse' />
+      <div className='duel'>
+        <h2>Munus</h2>
+        <div className='opponents'>
+          <div className='div1'>
+            <div className={`div2 ${isAnimate && 'winnerBody'}`}>
+              <CardsBestPlayers name='JeanFulusse' />
+            </div>
+            <button>Cote</button>
           </div>
-          <button>Cote</button>
-          <div className='div3'> </div>
+          <div className='div6'>
+            <button onClick={() => setisAnimate(!isAnimate)}>Attaque</button>
+          </div>
+          <div className='div5'>
+            <div className={`div5 ${isAnimate && 'looserBody'}`}>
+              <CardsBestPlayers name='JeanFulusse' />
+            </div>
+            <button>Cote</button>
+          </div>
         </div>
-        <div className='div4'>
-          <div className='winner'>
-            <div className='winnerBody'></div>
-            <div className='winnerWeapons'></div>
+      </div>
+      <div className='duel'>
+        <h2>Harmatodromia</h2>
+        <div className='opponents'>
+          <div className='div1'>
+            <div className={`div2 ${isAnimate2 && 'winnerBody'}`}>
+              <CardsBestPlayers name='JeanFulusse' />
+            </div>
+            <button>Cote</button>
           </div>
-          <div className='looser'>
-            <div className='looserBody'></div>
+          <div className='div6'>
+            <button onClick={() => setisAnimate2(!isAnimate2)}>Attaque</button>
+          </div>
+          <div className='div5'>
+            <div className={`div5 ${isAnimate2 && 'looserBody'}`}>
+              <CardsBestPlayers name='JeanFulusse' />
+            </div>
+            <button>Cote</button>
           </div>
         </div>
-        <div className='div6'>
-          <button onClick={() => animate()}>Attaque</button>
-        </div>
-        <div className='div5'>
-          <div className='div8'>
-            <CardsBestPlayers name='JeanFulusse' />
+      </div>
+      <div className='duel'>
+        <h2>Venatio</h2>
+        <div className='opponents'>
+          <div className='div1'>
+            <div className={`div2 ${isAnimate3 && 'winnerBody'}`}>
+              <CardsBestPlayers name='JeanFulusse' />
+            </div>
+            <button>Cote</button>
           </div>
-          <div className='div7'>
+          <div className='div6'>
+            <button onClick={() => setisAnimate3(!isAnimate3)}>Attaque</button>
+          </div>
+          <div className='div5'>
+            <div className={`div5 ${isAnimate3 && 'looserBody'}`}>
+              <CardsBestPlayers name='JeanFulusse' />
+            </div>
             <button>Cote</button>
           </div>
         </div>
