@@ -22,16 +22,29 @@ const Main = () => {
         </div>
       </div>
       <div className="paris">
-        <h2>Les Paris</h2>
+        <h2>💰 Les Paris 💰</h2>
         <div className="parisImg">
-          <img
-            src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
-            alt="gladiateur"
-          ></img>
-          <img
-            src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
-            alt="gladiateur"
-          ></img>
+          <div className="parisImgCombat">
+            <img
+              src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
+              alt="gladiateur"
+            ></img>
+            <p>Combat de gladiateurs</p>
+          </div>
+          <div className="parisImgCourse">
+            <img
+              src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
+              alt="gladiateur"
+            ></img>
+            <p>Course de chars</p>
+          </div>{" "}
+          <div className="parisImgCourse">
+            <img
+              src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
+              alt="gladiateur"
+            ></img>
+            <p>Course de chars</p>
+          </div>
         </div>
       </div>
       <div className="homeBestPlayers">

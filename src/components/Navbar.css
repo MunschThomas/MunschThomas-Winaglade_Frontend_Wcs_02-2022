@@ -14,6 +14,16 @@
   height: 23px;
 }
 
+.NavCredits {
+  position: absolute;
+  left: 20px;
+}
+
+.NavCredits h3 {
+  color: var(--thirdColor);
+  font-weight: bold;
+}
+
 #menu-burger {
   position: absolute;
   top: 10px;
