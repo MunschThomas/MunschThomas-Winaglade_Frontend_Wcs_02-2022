@@ -3,7 +3,7 @@
   display: flex;
   width: 100vw;
   height: 80px;
-  background-color: red;
+  background-color: var(--secondColor);
 }
 #menu-burger {
   position: absolute;
@@ -17,7 +17,7 @@
 #menu-burger .bar3 {
   width: 32px;
   height: 5px;
-  background-color: black;
+  background-color: var(--thirdColor);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -43,7 +43,7 @@
   z-index: 9999;
   left: -25%;
   top: auto;
-  background: #e74c3c;
+  background: var(--secondColor);
   padding: 4em 2em;
   width: 25%;
   min-height: 100%;

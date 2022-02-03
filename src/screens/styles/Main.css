@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--firstColor);
 }
 
 .homeIntro {
@@ -30,9 +31,7 @@
 }
 
 .homeIntro h1 {
-  font-size: 4em;
   text-align: left;
-  width: 80%;
 }
 
 .paris {
