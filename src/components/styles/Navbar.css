@@ -94,7 +94,7 @@
     left: 0%;
   }
   to {
-    left: -25%;
+    left: -30%;
   }
 }
 @-webkit-keyframes slideLeft {
@@ -102,6 +102,6 @@
     left: 0%;
   }
   to {
-    left: -25%;
+    left: -30%;
   }
 }
