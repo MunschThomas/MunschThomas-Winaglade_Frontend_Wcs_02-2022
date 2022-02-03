@@ -1,4 +1,5 @@
 import "./styles/Main.css";
+import Background from "../assets/background.png";
 
 import CardsBestPlayers from "../components/CardsBestPlayers";
 
@@ -6,10 +7,7 @@ const Main = () => {
   return (
     <div className="home">
       <div className="homeIntro">
-        <img
-          src="https://images-na.ssl-images-amazon.com/images/I/81OOLRQvTSL.jpg"
-          alt="gladiator"
-        ></img>
+        <img src={Background} alt="gladiator"></img>
         <div className="homeIntroText">
           <h1>AVE Casear, morituri te salutant</h1>
           <h2>WinaGlade, le premier site de parie Romain</h2>

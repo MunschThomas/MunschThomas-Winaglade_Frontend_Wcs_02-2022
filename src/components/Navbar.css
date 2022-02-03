@@ -41,7 +41,7 @@
 #navbar {
   position: fixed;
   z-index: 9999;
-  left: -25%;
+  left: -30%;
   top: auto;
   background: var(--secondColor);
   padding: 4em 2em;
