@@ -1,4 +1,5 @@
 import "./styles/Main.css";
+import Background from "../assets/background.png";
 
 import CardsBestPlayers from "../components/CardsBestPlayers";
 
@@ -6,26 +7,44 @@ const Main = () => {
   return (
     <div className="home">
       <div className="homeIntro">
-        <img
-          src="https://images-na.ssl-images-amazon.com/images/I/81OOLRQvTSL.jpg"
-          alt="gladiator"
-        ></img>
+        <img src={Background} alt="gladiator"></img>
         <div className="homeIntroText">
-          <h1>AVE Casear, morituri te salutant</h1>
-          <h2>WinaGlade, le premier site de parie Romain</h2>
+          <h1>
+            AVE Casear,
+            <br />
+            morituri
+            <br /> te salutant
+          </h1>
+          <h2>
+            WinaGlade,
+            <br /> le premier site de paris sportif Romain
+          </h2>
         </div>
       </div>
       <div className="paris">
-        <h2>Les Paris</h2>
+        <h2>💰 Les Paris 💰</h2>
         <div className="parisImg">
-          <img
-            src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
-            alt="gladiateur"
-          ></img>
-          <img
-            src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
-            alt="gladiateur"
-          ></img>
+          <div className="parisImgCombat">
+            <img
+              src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
+              alt="gladiateur"
+            ></img>
+            <p>Combat de gladiateurs</p>
+          </div>
+          <div className="parisImgCourse">
+            <img
+              src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
+              alt="gladiateur"
+            ></img>
+            <p>Course de chars</p>
+          </div>{" "}
+          <div className="parisImgCourse">
+            <img
+              src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
+              alt="gladiateur"
+            ></img>
+            <p>Course de chars</p>
+          </div>
         </div>
       </div>
       <div className="homeBestPlayers">
