@@ -10,7 +10,10 @@ const Main = () => {
           src="https://images-na.ssl-images-amazon.com/images/I/81OOLRQvTSL.jpg"
           alt="gladiator"
         ></img>
-        <h1>AVE Casear, morituri te salutant</h1>
+        <div className="homeIntroText">
+          <h1>AVE Casear, morituri te salutant</h1>
+          <h2>WinaGlade, le premier site de parie Romain</h2>
+        </div>
       </div>
       <div className="homeBestPlayers">
         <h2>🏆 Gladiateur du mois🏆</h2>

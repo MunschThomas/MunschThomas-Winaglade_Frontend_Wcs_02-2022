@@ -16,15 +16,23 @@
   height: 100%;
 }
 
+.homeIntroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
 .homeIntro img {
-  width: 60%;
+  width: 70%;
   height: auto;
 }
 
 .homeIntro h1 {
   font-size: 4em;
-  margin: 40px 0 0 40px;
   text-align: left;
+  width: 80%;
 }
 
 .homeBestPlayersCards {

@@ -1,8 +1,14 @@
 /* Menu burger */
+.Nav {
+  display: flex;
+  width: 100vw;
+  height: 80px;
+  background-color: red;
+}
 #menu-burger {
   position: absolute;
-  top: 2.5em;
-  right: 3.5em;
+  top: 10px;
+  right: 20px;
   display: inline-block;
   cursor: pointer;
 }
