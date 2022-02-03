@@ -15,6 +15,19 @@ const Main = () => {
           <h2>WinaGlade, le premier site de parie Romain</h2>
         </div>
       </div>
+      <div className="paris">
+        <h2>Les Paris</h2>
+        <div className="parisImg">
+          <img
+            src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
+            alt="gladiateur"
+          ></img>
+          <img
+            src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
+            alt="gladiateur"
+          ></img>
+        </div>
+      </div>
       <div className="homeBestPlayers">
         <h2>🏆 Gladiateur du mois🏆</h2>
         <div className="homeBestPlayersCards">
@@ -29,14 +42,9 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <h2>Gladiateur aléatoire</h2>
-      <div className="homePlayers">
-        <CardsBestPlayers name="JeanFulusse" />
-        <CardsBestPlayers name="JeanFulusse" />
-        <CardsBestPlayers name="JeanFulusse" />
-        <CardsBestPlayers name="JeanFulusse" />
-        <CardsBestPlayers name="JeanFulusse" />
-        <CardsBestPlayers name="JeanFulusse" />
+      <div className="homeContact">
+        <h2>Contact</h2>
+        <input type="textarea" className=""></input>
       </div>
     </div>
   );
