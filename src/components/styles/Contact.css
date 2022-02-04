@@ -1,0 +1,70 @@
+.homeContact > h2 {
+  font-family: var(--fontBody);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.holderformContact {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContact1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.formContact2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.formName {
+  margin-right: 5%;
+  height: 40px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: none;
+}
+
+.formMail {
+  height: 40px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: none;
+}
+
+.inputForm {
+  width: 32%;
+  height: 200px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+.submitButton {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border: none;
+  cursor: pointer;
+  background: #962828;
+  color: white;
+  border-radius: 5px;
+  margin-top: 2%;
+}

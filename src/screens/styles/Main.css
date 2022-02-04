@@ -50,11 +50,18 @@
   margin-top: 80px;
   padding: 40px 0;
   background: var(--fourColor);
+  text-align: center;
+  position: relative;
 }
 
 .paris h2 {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   text-align: center;
+  font-weight: 700;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .parisImg {
@@ -65,11 +72,146 @@
   width: 100%;
 }
 
+.parisIcon {
+  margin: 10px;
+  height: 40px;
+  width: auto;
+}
+
 .parisImg img {
-  width: 250px;
+  width: 350px;
   height: auto;
-  border: 2px brown solid;
+  border: 6px var(--secondColor) solid;
   border-radius: 20px;
+  box-shadow: 1px 1px 10px var(--gradientColor);
+}
+
+.paris p {
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: Muybridge;
+  src: url(https://www.lorp.org/fonts/MuybridgeGX.woff2);
+}
+
+@keyframes Gallop {
+  0% {
+    font-variation-settings: "TIME" 0;
+  }
+  100% {
+    font-variation-settings: "TIME" 15;
+  }
+}
+
+.horse {
+  font: 60px Muybridge;
+  animation: 1s linear infinite Gallop;
+}
+
+.horseDad {
+  position: absolute;
+  width: 100vw;
+  bottom: -12px;
+  left: -700px;
+  animation: 10s linear infinite run;
+}
+
+.horseMan {
+  position: absolute;
+  height: 50px;
+  width: 100vw;
+  bottom: 7px;
+  left: -700px;
+  animation: 10s linear infinite run;
+  animation-delay: 190ms;
+}
+
+.horseMan img,
+.horseMan2 img {
+  animation: 1s linear infinite Gallop;
+  width: 45px;
+}
+
+.horseMan3 img {
+  width: 120px;
+}
+
+.horseMan4 img {
+  width: 80px;
+  animation: 1s linear infinite Gallop;
+}
+
+.horseMan2 {
+  position: absolute;
+  height: 50px;
+  width: 100vw;
+  bottom: 7px;
+  left: -700px;
+  animation: 7s linear infinite run;
+  animation-delay: 120ms;
+}
+
+.horseMan3 {
+  position: absolute;
+  height: 50px;
+  width: 100vw;
+  bottom: -21px;
+  left: -700px;
+  animation: 10s linear infinite run;
+  animation-delay: 1400ms;
+}
+
+.horseMan4 {
+  position: absolute;
+  height: 50px;
+  width: 100vw;
+  bottom: 5px;
+  left: -700px;
+  animation: 10s linear infinite run;
+  animation-delay: 2878ms;
+}
+
+.horseDad2 {
+  position: absolute;
+  width: 100vw;
+  bottom: -10px;
+  left: -700px;
+  animation: 10s linear infinite run;
+  animation-delay: 1s;
+}
+
+.horseDad3 {
+  position: absolute;
+  width: 100vw;
+  bottom: -10px;
+  left: -700px;
+  animation: 7s linear infinite run;
+}
+.horseDad4 {
+  position: absolute;
+  width: 100vw;
+  bottom: -10px;
+  left: -900px;
+  animation: 10s linear infinite run;
+  animation-delay: 3s;
+}
+.horseDad5 {
+  position: absolute;
+  width: 100vw;
+  bottom: -10px;
+  left: -700px;
+  animation: 9s linear infinite run;
+}
+
+@keyframes run {
+  0% {
+    left: -900px;
+  }
+  100% {
+    left: 900px;
+  }
 }
 
 .homeBestPlayersCards {
@@ -85,8 +227,19 @@
 }
 
 .homeBestPlayers h2 {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   text-align: center;
+  font-weight: 700;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeBestPlayers h2 img {
+  margin: 10px;
+  height: 40px;
+  width: auto;
 }
 
 .homePlayers {
@@ -94,12 +247,21 @@
   flex-direction: row;
 }
 
-.homePlayersRandom img {
-  width: 200px;
-  height: 100px;
-}
-
 .homeContact {
   background: var(--fourColor);
   width: 100%;
+  margin-top: 80px;
+  padding: 40px 0;
+  background: var(--fourColor);
+  text-align: center;
+}
+
+.homeContacth2 {
+  margin-bottom: 70px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
