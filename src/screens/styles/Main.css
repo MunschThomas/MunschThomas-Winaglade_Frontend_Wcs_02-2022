@@ -110,6 +110,17 @@
   }
 }
 
+.h2Title {
+  font-weight: 700;
+  font-size: 3em;
+  color: var(--secondColor);
+}
+
+.h3Title {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: var(--secondColor);
+}
 .homeIntroImg {
   width: 60%;
   height: 90vh;
@@ -120,7 +131,7 @@
 }
 
 .homeIntro h1 {
-  font-size: 3em;
+  /* font-family: var(--fontTitle); */
   width: 350px;
   margin-top: 50px;
 }
@@ -141,6 +152,7 @@
   background: var(--fourColor);
   text-align: center;
   position: relative;
+  min-height: 80vh;
 }
 
 a {
@@ -199,10 +211,16 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--firstcolor);
+  font-weight: bold;
 
   /* border: 6px var(--secondColor) solid;
   border-radius: 20px;
   box-shadow: 1px 1px 10px var(--gradientColor); */
+}
+
+.parisImgCombat p {
+  font-weight: bold;
 }
 
 .parisImgCourseVideo {
@@ -212,6 +230,12 @@ a {
   overflow: hidden;
   height: 200px;
   border: 6px solid var(--secondColor);
+  border-radius: 44px;
+}
+
+.parisImgCourse p {
+  color: var(--firstcolor);
+  font-weight: bold;
 }
 
 .parisImgCourseVideo1 {
@@ -221,6 +245,7 @@ a {
   overflow: hidden;
   height: 200px;
   border: 6px solid var(--secondColor);
+  border-radius: 44px;
 }
 
 .parisImgCourseVideo1 {
@@ -425,6 +450,7 @@ a {
   text-align: center;
   margin-top: 6%;
   background: white;
+  padding: 40px;
 }
 
 .infoGame > a {

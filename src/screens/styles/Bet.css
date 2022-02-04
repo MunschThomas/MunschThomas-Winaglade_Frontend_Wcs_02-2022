@@ -11,7 +11,7 @@
 
 .wrapperBet {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 140px;
 }
 button {
   padding: 6px;
@@ -27,6 +27,24 @@ button:hover {
 
 .clickedCote {
   background-color: green;
+  height: 40px;
+  width: 100px;
+  border: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.coteClass {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border: none;
+  cursor: pointer;
+  background: var(--firstColor);
+  color: var(--thirdColor);
+  border-radius: 5px;
+  font-family: var(--fontBody);
 }
 
 button:active {
@@ -56,6 +74,15 @@ button:active {
   grid-area: 1 / 7 / 3 / 9;
 }
 
+.divPAdd {
+  padding: 50px 0 25px;
+}
+.divCentral {
+  background-color: var(--fourColor);
+  padding: 25px;
+  border-bottom: 5px solid var(--secondColor);
+  border-top: 5px solid var(--secondColor);
+}
 .winnerBody {
   animation: attak cubic-bezier(0.44, 0, 0.54, 1.16);
   animation-duration: 3s;
@@ -86,6 +113,7 @@ button:active {
 }
 .marginTop {
   padding-top: 150px;
+  background: var(--secondColor);
 }
 
 .marginTop h1 {
@@ -101,12 +129,11 @@ button:active {
   justify-content: center;
 }
 
-.coteTot{
+.coteTot {
   position: fixed;
   top: 10%;
   width: 100px;
   height: 100px;
-  
 }
 
 @keyframes attak {

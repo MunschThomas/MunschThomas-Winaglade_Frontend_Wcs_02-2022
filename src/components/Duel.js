@@ -38,6 +38,11 @@ export default function Duel(props) {
     console.log("coteTot", props.coteTot);
   };
 
+  const animated = document.getElementsByClassName('.looserBody')
+
+  animated.onanimationend = () => {
+    console.log('Animation ended')
+  }
   // test haut
   useEffect(() => {
     const fetchData = async () => {
@@ -116,8 +121,11 @@ export default function Duel(props) {
             {cote1}
           </button>
         </div>
-        <div className="div6">
-          <button onClick={test8hdumatin}>Attaque</button>
+
+        <div className='div6'>
+          <button className='submitButton' onClick={test8hdumatin}>
+            Attaque
+          </button>
         </div>
         <div className="div5">
           <div id={idNum1}>
