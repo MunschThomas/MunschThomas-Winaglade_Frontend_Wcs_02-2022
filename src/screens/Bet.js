@@ -1,44 +1,27 @@
-import Duel from '../components/Duel'
+import Duel from "../components/Duel";
 
-import { useState } from 'react'
-import './styles/Bet.css'
+import "./styles/Bet.css";
 
 const Bet = () => {
-  const [isAnimate, setisAnimate] = useState(false)
-  const [isAnimate2, setisAnimate2] = useState(false)
-  const [isAnimate3, setisAnimate3] = useState(false)
-  const randomArr = []
+  const combat1L = "aa";
+  const combat1W = "bb";
 
-  const randomGladiators = () => {
-    while (randomArr.length < 6) {
-      const r = Math.floor(Math.random() * 20)
-      if (randomArr.indexOf(r) === -1) randomArr.push(r)
-    }
-  }
-  randomGladiators()
+  const combat2L = "cc";
+  const combat2W = "dd";
+
+  const combat3L = "ee";
+  const combat3W = "ff";
 
   return (
-    <div className='wrapperBet'>
+    <div className="wrapperBet">
       <h1>Les paris</h1>
       <h2>Munus</h2>
-      <Duel
-        isAnimate={isAnimate}
-        setisAnimate={setisAnimate}
-        randomArr={randomArr}
-      />
+      <Duel combat={combat1L} combat2={combat1W} />
       <h2>Harmatodromia</h2>
-      <Duel
-        isAnimate={isAnimate2}
-        setisAnimate={setisAnimate2}
-        randomArr={randomArr}
-      />
+      <Duel combat={combat2L} combat2={combat2W} />
       <h2>Venatio</h2>
-      <Duel
-        isAnimate={isAnimate3}
-        setisAnimate={setisAnimate3}
-        randomArr={randomArr}
-      />
+      <Duel combat={combat3L} combat2={combat3W} />
     </div>
-  )
-}
-export default Bet
+  );
+};
+export default Bet;
