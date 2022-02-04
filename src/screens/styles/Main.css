@@ -47,7 +47,7 @@
 }
 
 .drops:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -120,7 +120,7 @@
 }
 
 .homeIntro h1 {
-  font-size: 3em;
+  /* font-family: var(--fontTitle); */
   width: 350px;
   margin-top: 50px;
 }
@@ -199,10 +199,16 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--firstcolor);
+  font-weight: bold;
 
   /* border: 6px var(--secondColor) solid;
   border-radius: 20px;
   box-shadow: 1px 1px 10px var(--gradientColor); */
+}
+
+.parisImgCombat p {
+  font-weight: bold;
 }
 
 .parisImgCourseVideo {
@@ -212,6 +218,12 @@ a {
   overflow: hidden;
   height: 200px;
   border: 6px solid var(--secondColor);
+  border-radius: 44px;
+}
+
+.parisImgCourse p {
+  color: var(--firstcolor);
+  font-weight: bold;
 }
 
 .parisImgCourseVideo1 {
@@ -221,6 +233,7 @@ a {
   overflow: hidden;
   height: 200px;
   border: 6px solid var(--secondColor);
+  border-radius: 44px;
 }
 
 .parisImgCourseVideo1 {
@@ -259,10 +272,10 @@ a {
 
 @keyframes Gallop {
   0% {
-    font-variation-settings: 'TIME' 0;
+    font-variation-settings: "TIME" 0;
   }
   100% {
-    font-variation-settings: 'TIME' 15;
+    font-variation-settings: "TIME" 15;
   }
 }
 

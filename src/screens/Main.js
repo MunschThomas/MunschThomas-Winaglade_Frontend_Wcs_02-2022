@@ -117,7 +117,7 @@ const Main = () => {
                   loop
                   src={Video1}
                   width="300px"
-                  height="200px"
+                  height="250px"
                   muted
                 ></video>
               </div>
