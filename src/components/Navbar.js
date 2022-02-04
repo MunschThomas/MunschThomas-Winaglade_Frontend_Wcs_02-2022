@@ -44,19 +44,31 @@ const Navbar = () => {
       <div id='navbar' className=''>
         <ul>
           <li className='nav'>
-            <a href='#' className='navLink'>
-              Lien 1
-            </a>
+            <Link
+              to='/'
+              className={`navLink ${isOpen ? 'clicked' : undefined}`}
+              onClick={openMenu}
+            >
+              Accueil
+            </Link>
           </li>
           <li className='nav'>
-            <a href='#' className='navLink'>
-              Lien 2
-            </a>
+            <Link
+              to='/Bet'
+              className={`navLink ${isOpen ? 'clicked' : undefined}`}
+              onClick={openMenu}
+            >
+              Paris Romain
+            </Link>
           </li>
           <li className='nav'>
-            <a href='#' className='navLink'>
-              Lien 3
-            </a>
+            <Link
+              to='/Gladiators'
+              className={`navLink ${isOpen ? 'clicked' : undefined}`}
+              onClick={openMenu}
+            >
+              Nos Gladiators
+            </Link>
           </li>
         </ul>
         <div className='dropParnt'>

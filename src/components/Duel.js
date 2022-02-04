@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import CardsBestPlayers from '../components/CardsBestPlayers'
 import CardsPlayer from '../components/CardsPlayer'
 
 import axios from 'axios'
@@ -66,8 +65,6 @@ export default function Duel(props) {
                     ville={gladiator.name_metier}
                   />
                 ))}
-
-            {/* // ))} */}
           </div>
           <button
             onClick={() => changeClass()}

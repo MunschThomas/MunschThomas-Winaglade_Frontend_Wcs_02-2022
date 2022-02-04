@@ -84,6 +84,22 @@ button:active {
 .duel:nth-child(3) {
   background-color: var(--firstColor);
 }
+.marginTop {
+  padding-top: 150px;
+}
+
+.marginTop h1 {
+  text-align: center;
+}
+.contentAll {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+}
 
 @keyframes attak {
   0% {

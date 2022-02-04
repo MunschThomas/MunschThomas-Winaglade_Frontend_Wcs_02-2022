@@ -23,20 +23,101 @@
   flex-direction: column;
   align-items: center;
   height: 90vh;
-  width: 100%;
+  width: 40vw;
 }
 
-/* .homeIntro img {
-  width: 62%;
-  height: 90vh;
+.dropiPrnt {
+  position: absolute;
+  bottom: 80px;
+  left: 53%;
+}
+
+.drops {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  top: -30px;
+  margin: 0 auto;
+  background: #962828;
+  border-radius: 20px;
+  animation-name: drip;
+  animation-timing-function: cubic-bezier(1, 0, 0.91, 0.19);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.drops:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 15px solid #962828;
+  top: -12px;
+}
+/* 
+.waves {
+  position: relative;
+  opacity: 0;
+  top: 0;
+  width: 2px;
+  height: 1px;
+  border: #fff 7px solid;
+  -moz-border-radius: 300px / 150px;
+  -webkit-border-radius: 300px / 150px;
+  border-radius: 300px / 150px;
+  -moz-animation-name: ripple;
+  -webkit-animation-name: ripple;
+  animation-name: ripple;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.waves:after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  left: -5px;
+  width: 2px;
+  height: 1px;
+  border: #fff 5px solid;
+  -moz-border-radius: 300px / 150px;
+  -webkit-border-radius: 300px / 150px;
+  border-radius: 300px / 150px;
+  -moz-animation-name: ripple-2;
+  -webkit-animation-name: ripple-2;
+  animation-name: ripple-2;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 } */
 
+@keyframes drip {
+  to {
+    top: 190px;
+  }
+}
+
 .homeIntroImg {
-  width: 100%;
+  width: 60%;
   height: 90vh;
   background-image: var(--photo);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
 .homeIntro h1 {
@@ -179,10 +260,10 @@ a {
 
 @keyframes Gallop {
   0% {
-    font-variation-settings: "TIME" 0;
+    font-variation-settings: 'TIME' 0;
   }
   100% {
-    font-variation-settings: "TIME" 15;
+    font-variation-settings: 'TIME' 15;
   }
 }
 
