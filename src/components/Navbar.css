@@ -15,9 +15,7 @@
   width: 233px;
   height: 23px;
   transform-origin: left;
-  animation: moove 2s 6s infinite;
-  /* animation-duration: 2s;
-  animation-delay: 6s; */
+  animation: moove 10s infinite;
 }
 
 @keyframes moove {
@@ -25,17 +23,20 @@
     transform: rotate(0deg);
   }
 
-  20% {
+  3% {
     transform: rotate(-6deg);
   }
-  60% {
+  6% {
     transform: rotate(6deg);
   }
-  80% {
+  9% {
     transform: rotate(0deg);
   }
-  90% {
+  12% {
     transform: translateX(90px);
+  }
+  15% {
+    transform: translateX(0px);
   }
 
   100% {
