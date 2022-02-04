@@ -3,11 +3,39 @@ import Background from "../assets/background.png";
 import HorseMan from "../assets/horseman.png";
 import HorseMan2 from "../assets/horseman2.png";
 import HorseMan3 from "../assets/horseman3.png";
+import Video1 from "../assets/Mavideo.mp4";
+import Video2 from "../assets/Mavideo2.mp4";
+import Video3 from "../assets/Mavideo3.mp4";
 
 import CardsBestPlayers from "../components/CardsBestPlayers";
 import Contact from "../components/Contact";
+import Typed from "typed.js";
+import { Link } from "react-router-dom";
+import { useRef, useEffect } from "react";
 
 const Main = () => {
+  // const el = useRef(null);
+
+  // useEffect(() => {
+  //   const typed = new Typed(el.current, {
+  //     strings: [" Parier ", " Gagner", " Vibrer"], // Strings to display
+  //     // Speed settings, try diffrent values untill you get good results
+  //     startDelay: 300,
+  //     typeSpeed: 120,
+  //     backSpeed: 80,
+  //     backDelay: 700,
+  //     smartBackspace: true,
+  //     loop: true,
+  //     showCursor: true,
+  //     cursorChar: " !",
+  //     autoInsertCss: true,
+  //   });
+
+  //   // Destropying
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
   return (
     <div className="home">
       <div className="homeIntro">
@@ -57,40 +85,78 @@ const Main = () => {
         <div className="horseDad5">
           <div className="horse">🐎</div>
         </div>
-        <h2>
-          <img
-            className="parisIcon"
-            src="https://img.icons8.com/ios/50/000000/money-bag.png"
-            alt="paris"
-          />
-          Les Paris
-          <img
-            className="parisIcon"
-            src="https://img.icons8.com/ios/50/000000/money-bag.png"
-            alt="paris"
-          />
-        </h2>
-        <div className="parisImg">
-          <div className="parisImgCombat">
+        <Link to="/Bet">
+          <h2 className="Link">
             <img
-              src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
-              alt="gladiateur"
-            ></img>
-            <p>Combat de gladiateurs</p>
+              className="parisIcon"
+              src="https://img.icons8.com/ios/50/000000/money-bag.png"
+              alt="paris"
+            />
+            Cliquez Ici pour Parier
+            {/* Cliquez Ici pour <span ref={el}></span> */}
+            <img
+              className="parisIcon"
+              src="https://img.icons8.com/ios/50/000000/money-bag.png"
+              alt="paris"
+            />
+          </h2>
+        </Link>
+        <div className="parisImg">
+          <div className="parisImgCourseDad">
+            <div className="parisImgCombat">
+              <div className="parisImgCourseVideo">
+                <video
+                  autoplay="true"
+                  mute="true"
+                  loop
+                  src={Video1}
+                  width="300px"
+                  height="200px"
+                  muted
+                ></video>
+              </div>
+              {/* <img
+              src='https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png'
+              alt='gladiateur'
+            ></img> */}
+              <p>Gladiateurs</p>
+            </div>
           </div>
           <div className="parisImgCourse">
-            <img
+            {/* <img
               src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
               alt="gladiateur"
-            ></img>
+            ></img> */}{" "}
+            <div className="parisImgCourseVideo" id="yougouu">
+              <video
+                autoplay="true"
+                mute="true"
+                loop
+                src={Video2}
+                width="300px"
+                height="200px"
+                muted
+              ></video>
+            </div>
             <p>Course de chars</p>
           </div>{" "}
           <div className="parisImgCourse">
-            <img
+            {/* <img
               src="https://static.actu.fr/uploads/2019/03/GladiateurWeb-960x640.png"
               alt="gladiateur"
-            ></img>
-            <p>Course de chars</p>
+            ></img> */}{" "}
+            <div className="parisImgCourseVideo">
+              <video
+                autoplay="true"
+                mute="true"
+                loop
+                src={Video3}
+                width="300px"
+                height="200px"
+                muted
+              ></video>
+            </div>
+            <p>Animaux</p>
           </div>
         </div>
       </div>
