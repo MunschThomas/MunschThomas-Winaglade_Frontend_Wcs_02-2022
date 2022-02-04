@@ -19,7 +19,7 @@ export default function Gladiators() {
 
   return (
     <div className='marginTop'>
-      <h1>Les gladiators</h1>
+      <h2 className='h1Title'>Les gladiators</h2>
       <div className='contentAll'>
         {allGlads.map((gladiator) => (
           <CardsPlayer

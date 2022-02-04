@@ -49,7 +49,7 @@ const Navbar = () => {
               className={`navLink ${isOpen ? 'clicked' : undefined}`}
               onClick={openMenu}
             >
-              Accueil
+              <h2 className='h1Title'>Accueil</h2>
             </Link>
           </li>
           <li className='nav'>
@@ -58,7 +58,7 @@ const Navbar = () => {
               className={`navLink ${isOpen ? 'clicked' : undefined}`}
               onClick={openMenu}
             >
-              Paris Romain
+              <h2 className='h1Title'> Paris </h2>
             </Link>
           </li>
           <li className='nav'>
@@ -67,7 +67,7 @@ const Navbar = () => {
               className={`navLink ${isOpen ? 'clicked' : undefined}`}
               onClick={openMenu}
             >
-              Nos Gladiators
+              <h2 className='h1Title'>Nos Gladiators</h2>
             </Link>
           </li>
         </ul>
