@@ -196,6 +196,13 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <div className="infoGame">
+        <a href="https://www.joueurs-info-service.fr/">
+          JOUER COMPPORTE DES RISQUES : ENDETTEMENT, ISOLEMENT, DÉPENDANCE
+          <br />
+          POUR ETRE AIDÉ , CONTACTER LE SCRIPT OTIS. (discussion non surtaxé)
+        </a>
+      </div>
       <div className="homeContact">
         <h2 className="homeContacth2">Contact</h2>
         <Contact />
