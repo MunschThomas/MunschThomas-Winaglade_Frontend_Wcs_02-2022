@@ -40,7 +40,12 @@ const Main = () => {
     <div className="home">
       <div className="homeIntro">
         {/* <img src={Background} alt="gladiator"></img> */}
-        <div className="homeIntroImg"></div>
+        <div className="homeIntroImg">
+          <div className="dropiPrnt">
+            <div class="drops"></div>
+            <div class="waves"></div>
+          </div>
+        </div>
         <div className="homeIntroText">
           <h1>
             AVE Casear,

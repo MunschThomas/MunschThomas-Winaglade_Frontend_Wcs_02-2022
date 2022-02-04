@@ -27,6 +27,8 @@
   --gradientColor: #7f1100;
   --fontTitle: "egypteFont" 400;
   --fontBody: "egypteFont", sans-serif;
+  --fontTitle: "egypteFont" 400;
+  --fontBody: "egypteFont", sans-serif;
   --photo: url(./assets/backgroundEgypt.png);
 }
 
