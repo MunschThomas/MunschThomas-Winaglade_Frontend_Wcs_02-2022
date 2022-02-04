@@ -1,44 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
 @font-face {
-  font-family: "egypteFont";
+  font-family: 'egypteFont';
   src: url(./fonts/egypte.TTF);
 }
 @font-face {
-  font-family: "greceFont";
+  font-family: 'greceFont';
   src: url(./fonts/grece.ttf);
 }
 
 :root,
-[data-theme="rome"] {
+[data-theme='rome'] {
   --firstColor: #c5c1c1;
   --secondColor: #962828;
   --thirdColor: #ffffff;
   --fourColor: #707070;
   --gradientColor: #010101;
-  --fontTitle: "Philosopher", sans-serif;
-  --fontBody: "Philosopher", sans-serif;
+  --fontTitle: 'Philosopher', sans-serif;
+  --fontBody: 'Philosopher', sans-serif;
   --photo: url(./assets/background.png);
 }
 
-[data-theme="egypte"] {
+[data-theme='egypte'] {
   --firstColor: #fec279;
   --secondColor: #34b1fe;
   --thirdColor: #54676a;
   --gradientColor: #7f1100;
-  --fontTitle: "egypteFont" 400;
-  --fontBody: "egypteFont", sans-serif;
-  --fontTitle: "egypteFont" 400;
-  --fontBody: "egypteFont", sans-serif;
+  --fontTitle: 'egypteFont' 400;
+  --fontBody: 'egypteFont', sans-serif;
+  --fontTitle: 'egypteFont' 400;
+  --fontBody: 'egypteFont', sans-serif;
   --photo: url(./assets/backgroundEgypt.png);
 }
 
-[data-theme="grece"] {
+[data-theme='grece'] {
   --firstColor: #61230d;
   --secondColor: #c99154;
   --thirdColor: #000000;
   --gradientColor: #b27855;
-  --fontTitle: "greceFont" 400;
-  --fontBody: "greceFont", sans-serif;
+  --fontTitle: 'greceFont' 400;
+  --fontBody: 'greceFont', sans-serif;
   --photo: url(./assets/backgroundGrece.png);
 }
 
@@ -81,6 +81,7 @@ input {
   right: 100px;
   z-index: 110000;
   cursor: pointer;
+  filter: invert(1);
 }
 
 .grece {
@@ -89,6 +90,7 @@ input {
   right: 190px;
   z-index: 110000;
   cursor: pointer;
+  filter: invert(1);
 }
 
 .rome {
@@ -97,4 +99,5 @@ input {
   right: 260px;
   z-index: 110000;
   cursor: pointer;
+  filter: invert(1);
 }

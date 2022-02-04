@@ -47,7 +47,7 @@
 }
 
 .drops:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -110,6 +110,17 @@
   }
 }
 
+.h2Title {
+  font-weight: 700;
+  font-size: 3em;
+  color: var(--secondColor);
+}
+
+.h3Title {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: var(--secondColor);
+}
 .homeIntroImg {
   width: 60%;
   height: 90vh;
@@ -141,6 +152,7 @@
   background: var(--fourColor);
   text-align: center;
   position: relative;
+  min-height: 80vh;
 }
 
 a {
@@ -272,10 +284,10 @@ a {
 
 @keyframes Gallop {
   0% {
-    font-variation-settings: "TIME" 0;
+    font-variation-settings: 'TIME' 0;
   }
   100% {
-    font-variation-settings: "TIME" 15;
+    font-variation-settings: 'TIME' 15;
   }
 }
 
@@ -438,6 +450,7 @@ a {
   text-align: center;
   margin-top: 6%;
   background: white;
+  padding: 40px;
 }
 
 .infoGame > a {
