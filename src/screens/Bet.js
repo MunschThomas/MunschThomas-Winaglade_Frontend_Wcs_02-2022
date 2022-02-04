@@ -1,4 +1,3 @@
-import CardsBestPlayers from '../components/CardsBestPlayers'
 import Duel from '../components/Duel'
 
 import { useState } from 'react'

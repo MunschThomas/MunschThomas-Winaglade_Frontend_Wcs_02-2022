@@ -27,12 +27,8 @@ button:hover {
 .clickedCote {
   background-color: green;
 }
-.coteClass {
-  background-color: rgb(128, 60, 0);
-}
 
 button:active {
-  background-color: var(--secondColor);
   border: 5px solid var(--fourColor);
 }
 

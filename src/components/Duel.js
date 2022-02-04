@@ -1,9 +1,13 @@
 import { useState, useEffect } from 'react'
 import CardsBestPlayers from '../components/CardsBestPlayers'
+import CardsPlayer from '../components/CardsPlayer'
+
+import axios from 'axios'
 
 export default function Duel(props) {
   const [isClicked, setIsClicked] = useState(false)
   const [isClicked2, setIsClicked2] = useState(false)
+  const [gladiators, setGladiators] = useState([])
 
   const changeClass = () => {
     setIsClicked(!isClicked)
@@ -12,12 +16,28 @@ export default function Duel(props) {
     setIsClicked2(!isClicked2)
   }
 
+  useEffect(() => {
+    const getGladiators = () => {
+      axios
+        .get('http://localhost:4242/api/glad/')
+        .then((res) => res.data)
+        .then((res) => console.log(res) || setGladiators(res))
+    }
+    getGladiators()
+  }, [])
+
   return (
     <div>
       <div className='opponents'>
         <div className='div1'>
           <div className={`div2 ${props.isAnimate && 'winnerBody'}`}>
-            <CardsBestPlayers name='JeanFulusse' />
+            {gladiators.map((gladiator) => (
+              <CardsPlayer
+                name={gladiator.name_glad}
+                key={gladiator.id}
+                backgroundImg={gladiator.image}
+              />
+            ))}
           </div>
           <button
             onClick={() => changeClass()}
