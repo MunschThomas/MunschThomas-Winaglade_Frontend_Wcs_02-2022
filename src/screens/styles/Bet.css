@@ -9,6 +9,18 @@
   text-align: center;
 }
 
+.labelWinner {
+  width: 30vw !important;
+  margin: auto !important;
+  background: white;
+  padding: 2rem;
+  outline: none !important;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+}
+
 .wrapperBet {
   text-align: center;
   padding-top: 140px;

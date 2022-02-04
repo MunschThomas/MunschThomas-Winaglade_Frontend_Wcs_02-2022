@@ -110,6 +110,12 @@
   }
 }
 
+.h1Title {
+  font-weight: 700;
+  font-size: 3em;
+  color: var(--firstColor);
+  text-align: center;
+}
 .h2Title {
   font-weight: 700;
   font-size: 3em;
