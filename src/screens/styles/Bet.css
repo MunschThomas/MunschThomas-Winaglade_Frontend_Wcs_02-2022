@@ -101,6 +101,14 @@ button:active {
   justify-content: center;
 }
 
+.coteTot{
+  position: fixed;
+  top: 10%;
+  width: 100px;
+  height: 100px;
+  
+}
+
 @keyframes attak {
   0% {
     -webkit-transform: translateX(0px) rotate(0deg);
