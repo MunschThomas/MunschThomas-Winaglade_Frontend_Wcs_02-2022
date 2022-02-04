@@ -37,6 +37,7 @@
   --gradientColor: #b27855;
   --fontTitle: "greceFont" 400;
   --fontBody: "greceFont", sans-serif;
+  --photo: url(./assets/backgroundGrece.png);
 }
 
 body {
@@ -77,6 +78,7 @@ input {
   top: 0px;
   right: 100px;
   z-index: 110000;
+  cursor: pointer;
 }
 
 .grece {
@@ -84,6 +86,7 @@ input {
   top: 16px;
   right: 190px;
   z-index: 110000;
+  cursor: pointer;
 }
 
 .rome {
@@ -91,4 +94,5 @@ input {
   top: 16px;
   right: 260px;
   z-index: 110000;
+  cursor: pointer;
 }
