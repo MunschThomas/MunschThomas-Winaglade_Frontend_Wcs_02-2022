@@ -23,13 +23,24 @@ const Navbar = () => {
   }
 
   return (
-    <div className='Nav'>
-      <div className='NavCredits'>
-        <h3>💰 1523.21 Sesterces</h3>
+    <div>
+      <div className='Nav'>
+        <div className='NavCredits'>
+          <h3>💰 1523.21 Sesterces</h3>
+        </div>
+        <Link to='/' className='NavLogoMoove'>
+          <img className='NavLogo' src={Logo} alt='logo'></img>
+        </Link>
+        <div
+          id='menu-burger'
+          className={isOpen ? 'clicked' : undefined}
+          onClick={openMenu}
+        >
+          <div className='bar1'></div>
+          <div className='bar2'></div>
+          <div className='bar3'></div>
+        </div>
       </div>
-      <Link to='/' className='NavLogoMoove'>
-        <img className='NavLogo' src={Logo} alt='logo'></img>
-      </Link>
       <div id='navbar' className=''>
         <ul>
           <li className='nav'>
@@ -48,15 +59,9 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-      </div>
-      <div
-        id='menu-burger'
-        className={isOpen ? 'clicked' : undefined}
-        onClick={openMenu}
-      >
-        <div className='bar1'></div>
-        <div className='bar2'></div>
-        <div className='bar3'></div>
+        <div className='dropParnt'>
+          <div class='drop'></div>
+        </div>
       </div>
     </div>
   )
