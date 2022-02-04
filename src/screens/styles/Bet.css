@@ -32,10 +32,6 @@ button:active {
   border: 5px solid var(--fourColor);
 }
 
-h2 {
-  margin-top: 100px;
-}
-
 .div1 {
   grid-area: 1 / 1 / 5 / 3;
 }
@@ -59,7 +55,14 @@ h2 {
   animation-iteration-count: 2;
 }
 
+#div51 {
+  grid-area: 1 / 4 / 5 / 6;
+}
+#div50 {
+  grid-area: 1 / 4 / 5 / 6;
+}
 .looserBody {
+  grid-area: 1 / 4 / 5 / 6;
   animation: attak2 cubic-bezier(0.44, 0, 0.54, 1.16);
   animation-duration: 3s;
   animation-delay: 1.5s;
