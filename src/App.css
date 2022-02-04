@@ -25,14 +25,11 @@
   --secondColor: #34b1fe;
   --thirdColor: #54676a;
   --gradientColor: #7f1100;
-<<<<<<< HEAD
   --fontTitle: 'egypteFont' 400;
   --fontBody: 'egypteFont', sans-serif;
-=======
   --fontTitle: "egypteFont" 400;
   --fontBody: "egypteFont", sans-serif;
   --photo: url(./assets/backgroundEgypt.png);
->>>>>>> dev
 }
 
 [data-theme='grece'] {
