@@ -15,13 +15,22 @@ function App() {
   return (
     <div className="App" data-theme={theme}>
       <div className="rome" onClick={() => changeTheme("rome")}>
-        Rome
+        <img
+          src="https://img.icons8.com/ios/50/000000/coliseum.png"
+          alt="rome"
+        ></img>
       </div>
       <div className="egypte" onClick={() => changeTheme("egypte")}>
-        Egypte
+        <img
+          src="https://img.icons8.com/pastel-glyph/64/000000/sphinx.png"
+          alt="egypte"
+        ></img>
       </div>
       <div className="grece" onClick={() => changeTheme("grece")}>
-        Grece
+        <img
+          src="https://img.icons8.com/ios/50/000000/greek-helmet.png"
+          alt="greece"
+        ></img>
       </div>
       <Navbar />
       <Routes>

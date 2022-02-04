@@ -27,6 +27,7 @@
   --gradientColor: #7f1100;
   --fontTitle: "egypteFont" 400;
   --fontBody: "egypteFont", sans-serif;
+  --photo: url(./assets/backgroundEgypt.png);
 }
 
 [data-theme="grece"] {
@@ -73,21 +74,21 @@ input {
 
 .egypte {
   position: fixed;
-  top: 30px;
+  top: 0px;
   right: 100px;
   z-index: 110000;
 }
 
 .grece {
   position: fixed;
-  top: 30px;
-  right: 200px;
+  top: 16px;
+  right: 190px;
   z-index: 110000;
 }
 
 .rome {
   position: fixed;
-  top: 30px;
-  right: 300px;
+  top: 16px;
+  right: 260px;
   z-index: 110000;
 }
