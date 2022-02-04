@@ -39,7 +39,8 @@ const Main = () => {
   return (
     <div className="home">
       <div className="homeIntro">
-        <img src={Background} alt="gladiator"></img>
+        {/* <img src={Background} alt="gladiator"></img> */}
+        <div className="homeIntroImg"></div>
         <div className="homeIntroText">
           <h1>
             AVE Casear,
