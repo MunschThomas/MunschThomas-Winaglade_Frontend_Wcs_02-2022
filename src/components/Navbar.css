@@ -7,11 +7,40 @@
   width: 100%;
   height: 80px;
   background-color: var(--secondColor);
+  position: fixed;
+  z-index: 100000;
 }
 
-.NavLogo {
+.NavLogoMoove {
   width: 233px;
   height: 23px;
+  transform-origin: left;
+  animation: moove 10s infinite;
+}
+
+@keyframes moove {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  3% {
+    transform: rotate(-6deg);
+  }
+  6% {
+    transform: rotate(6deg);
+  }
+  9% {
+    transform: rotate(0deg);
+  }
+  12% {
+    transform: translateX(90px);
+  }
+  15% {
+    transform: translateX(0px);
+  }
+
+  100% {
+  }
 }
 
 .NavCredits {
