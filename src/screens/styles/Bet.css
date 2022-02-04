@@ -32,10 +32,6 @@ button:active {
   border: 5px solid var(--fourColor);
 }
 
-h2 {
-  margin-top: 100px;
-}
-
 .div1 {
   grid-area: 1 / 1 / 5 / 3;
 }

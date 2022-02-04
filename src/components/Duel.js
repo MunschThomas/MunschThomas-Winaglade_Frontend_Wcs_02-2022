@@ -8,6 +8,8 @@ export default function Duel(props) {
   const [isClicked, setIsClicked] = useState(false)
   const [isClicked2, setIsClicked2] = useState(false)
   const [gladiators, setGladiators] = useState([])
+  const [newGlad, setNewGlad] = useState([])
+  const random = props.randomArr
 
   const changeClass = () => {
     setIsClicked(!isClicked)
@@ -17,27 +19,41 @@ export default function Duel(props) {
   }
 
   useEffect(() => {
-    const getGladiators = () => {
+    const getGladiators = async (resolve, reject) => {
       axios
         .get('http://localhost:4242/api/glad/')
         .then((res) => res.data)
-        .then((res) => console.log(res) || setGladiators(res))
+        .then((res) => setGladiators(res))
+      resolve('1')
     }
     getGladiators()
+    setNewGlad(gladiators.splice(random[0], 1))
   }, [])
+
+  console.log(newGlad)
 
   return (
     <div>
       <div className='opponents'>
         <div className='div1'>
           <div className={`div2 ${props.isAnimate && 'winnerBody'}`}>
-            {gladiators.map((gladiator) => (
+            {/* {gladiators.map((gladiator) => ( */}
+            {newGlad && (
               <CardsPlayer
-                name={gladiator.name_glad}
-                key={gladiator.id}
-                backgroundImg={gladiator.image}
+                name={newGlad.name_glad}
+                key={newGlad.id}
+                backgroundImg={newGlad.imageSans}
+                agi={newGlad.AGI}
+                vit={newGlad.VIT}
+                acc={newGlad.ACC}
+                man={newGlad.MAN}
+                att={newGlad.ATT}
+                def={newGlad.DEF}
+                ville={newGlad.name_metier}
               />
-            ))}
+            )}
+
+            {/* // ))} */}
           </div>
           <button
             onClick={() => changeClass()}
