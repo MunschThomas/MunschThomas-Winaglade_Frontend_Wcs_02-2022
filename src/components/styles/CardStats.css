@@ -6,8 +6,12 @@
   height: 350px;
   width: 250px;
   border: 2px solid black;
-  background-image: url(../../assets/shield.png);
+  background-image: url(http://localhost:3000/static/media/shield.a636d14….png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 .cardTop {
   display: flex;
   flex-direction: row;
