@@ -63,8 +63,9 @@
   border: none;
   border: none;
   cursor: pointer;
-  background: #962828;
-  color: white;
+  background: var(--secondColor);
+  color: var(--thirdColor);
   border-radius: 5px;
   margin-top: 2%;
+  font-family: var(--fontBody);
 }
